@@ -1,0 +1,129 @@
+numeric: 0, reverse: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        break;
+        break;
+        break;
+        cmp_proc = numcmp;
+        cmp_proc = strcasecmp;
+        printf("%s\n", lineptr[i]);
+        printf("%s\n", lineptr[i]);
+        reverse = 1;
+      case 'f':
+      case 'n':
+      case 'r':
+      line[len - 1] = '\0';
+      lineptr[nlines++] = p;
+      return -1;
+      strcpy(p, line);
+      swap(v, ++last, i);
+      switch (c) {
+      }
+    *s = c;
+    *s++ = c;
+    for (i = 0; i < nlines; i++)
+    for (i = nlines - 1; i >= 0; i--)
+    if ((*comp)(v[i], v[left]) < 0)
+    if (nlines >= maxlines || (p = malloc(len)) == NULL) {
+    printf("input too big to sort\n");
+    quicksort((void **) lineptr, 0, nlines - 1, (int (*)(void *, void *))cmp_proc);
+    return -1;
+    return 0;
+    return 0;
+    return 1;
+    return 1;
+    return;
+    while ((c = *++argv[0]))
+    writelines(lineptr, nlines, reverse);
+    }
+    } else {
+  *s = '\0';
+  char *p, line[MAXLEN];
+  char *t = s;
+  double v1, v2;
+  else
+  else
+  else if (v1 > v2)
+  for (; s - t  < lim - 1 && (c = getchar()) != EOF && c != '\n'; s++)
+  for (i = left + 1; i <= right; i++)
+  if ((nlines = readlines(lineptr, MAXLINES)) >= 0) {
+  if (c == '\n') 
+  if (left >= right)
+  if (reverse)
+  if (v1 < v2)
+  int (*cmp_proc)(void *, void *) = strcmp;
+  int c, i;
+  int c, nlines;
+  int i, last;
+  int i;
+  int len, nlines;
+  int numeric = 0;
+  int reverse = 0;
+  last = left;
+  nlines = 0;
+  printf("numeric: %d, reverse: %d\n", numeric, reverse);
+  quicksort(v, last + 1, right, comp);
+  quicksort(v, left, last - 1, comp);
+  return nlines;
+  return s - t;
+  swap(v, left, (left + right) / 2);
+  swap(v, left, last);
+  temp = v[i];
+  v1 = atof(s1);
+  v2 = atof(s2);
+  v[i] = v[j];
+  v[j] = temp;
+  void *temp;
+  void swap(void *v[], int i, int j);
+  while (--argc > 0 && (*++argv)[0] == '-')
+  while((len = getln(line, MAXLEN)) > 0)
+  }
+  } else {
+#define MAXLEN 1000
+#define MAXLINES 5000
+#define MAXSTOR 5000
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+char *lineptr[MAXLINES];
+int getln(char *, int);
+int getln(char *s, int lim) {
+int main(int argc, char *argv[]) {
+int numcmp(char *, char *);
+int numcmp(char *s1, char *s2) {
+int readlines(char *lineptr[], int maxlines) {
+int readlines(char *lineptr[], int nlines);
+void quicksort(void *lineptr[], int left, int right, int (*comp)(void *, void *));
+void quicksort(void *v[], int left, int right, int (*comp)(void *, void *)) {
+void swap(void *v[], int i, int j) {
+void writelines(char *lineptr[], int nlines, int reverse) {
+void writelines(char *lineptr[], int nlines, int reverse);
+}
+}
+}
+}
+}
+}
+}
