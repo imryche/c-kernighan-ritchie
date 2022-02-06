@@ -23,5 +23,7 @@ int main() {
       printf("invalid: %s\n", line);
   }
 
+  free(line);
+
   return 0;
 }
